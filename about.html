@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="https://cdn.tailwindcss.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Nutaku-Style Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nutaku: {
+                            red: '#ff2a4f',
+                            dark: '#1a1a2e',
+                            purple: '#6a3093',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-nutaku-dark text-gray-100 min-h-screen">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 left-0 z-50 bg-nutaku-dark/90 backdrop-blur-sm shadow-md shadow-nutaku-red/30">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">
+                Kyle
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="font-medium hover:text-nutaku-red transition-colors">Home</a>
+                <a href="about.html" class="font-medium text-nutaku-red">About</a>
+                <a href="work.html" class="font-medium hover:text-nutaku-red transition-colors">Work</a>
+                <a href="contact.html" class="font-medium hover:text-nutaku-red transition-colors">Contact</a>
+            </div>
+            
+            <button id="nav-toggle" class="md:hidden text-2xl focus:outline-none">
+                <i class='bx bx-menu'></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="nav-menu" class="hidden md:hidden bg-nutaku-dark w-full absolute left-0 top-full shadow-lg">
+            <div class="flex flex-col space-y-2 p-4">
+                <a href="../index.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50">Home</a>
+                <a href="about.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 text-nutaku-red">About</a>
+                <a href="work.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Work</a>
+                <a href="contact.html" class="font-medium py-2 px-4 rounded hover:bg-nutaku-dark/50 hover:text-nutaku-red">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Page Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-8 pt-24 md:pt-32 pb-12">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                About <span class="bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">Me</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Passionate developer creating immersive adult gaming experiences with cutting-edge technology.
+            </p>
+        </section>
+
+        <!-- Bio Section -->
+        <section class="flex flex-col md:flex-row gap-12 mb-20">
+            <div class="md:w-1/3">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-nutaku-red to-nutaku-purple rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-opacity"></div>
+                    <img src="https://via.placeholder.com/400x500" alt="Profile" class="relative w-full h-auto rounded-2xl border-4 border-nutaku-dark z-10">
+                </div>
+            </div>
+            
+            <div class="md:w-2/3">
+                <h2 class="text-3xl font-bold mb-6">Game Developer & UI Specialist</h2>
+                
+                <div class="space-y-4 mb-8">
+                    <p>With over 5 years in the adult gaming industry, I combine technical expertise with creative vision to build engaging experiences.</p>
+                    <p>Specialized in JavaScript frameworks and responsive design, I've contributed to multiple award-winning Nutaku-published titles.</p>
+                    <p>When not coding, I experiment with 3D rendering and UI animation techniques.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="bg-nutaku-dark/50 p-4 rounded-xl border border-gray-800">
+                        <div class="flex items-center mb-2">
+                            <i class='bx bx-badge-check text-nutaku-red text-xl mr-2'></i>
+                            <h3 class="font-bold">Experience</h3>
+                        </div>
+                        <p class="text-gray-300">5+ Years</p>
+                    </div>
+                    
+                    <div class="bg-nutaku-dark/50 p-4 rounded-xl border border-gray-800">
+                        <div class="flex items-center mb-2">
+                            <i class='bx bx-project text-nutaku-red text-xl mr-2'></i>
+                            <h3 class="font-bold">Projects</h3>
+                        </div>
+                        <p class="text-gray-300">20+ Completed</p>
+                    </div>
+                    
+                    <div class="bg-nutaku-dark/50 p-4 rounded-xl border border-gray-800">
+                        <div class="flex items-center mb-2">
+                            <i class='bx bx-support text-nutaku-red text-xl mr-2'></i>
+                            <h3 class="font-bold">Support</h3>
+                        </div>
+                        <p class="text-gray-300">24/7</p>
+                    </div>
+                    
+                    <div class="bg-nutaku-dark/50 p-4 rounded-xl border border-gray-800">
+                        <div class="flex items-center mb-2">
+                            <i class='bx bx-group text-nutaku-red text-xl mr-2'></i>
+                            <h3 class="font-bold">Community</h3>
+                        </div>
+                        <p class="text-gray-300">50K+</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#" class="bg-gradient-to-r from-nutaku-red to-nutaku-purple px-6 py-2 rounded-full font-medium hover:shadow-lg hover:shadow-nutaku-red/30 transition-all flex items-center">
+                        <i class='bx bx-download mr-2'></i> Download CV
+                    </a>
+                    <a href="contact.html" class="border border-nutaku-red px-6 py-2 rounded-full font-medium hover:bg-nutaku-red/10 transition-all flex items-center">
+                        <i class='bx bx-envelope mr-2'></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">
+                    My Skills
+                </span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-nutaku-dark/50 p-6 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class='bx bx-code-alt text-nutaku-red mr-2'></i>
+                        Technical Skills
+                    </h3>
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>HTML5/CSS3</span>
+                                <span class="text-nutaku-red">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-800 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-nutaku-red to-nutaku-purple h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <!-- Add other skills similarly -->
+                    </div>
+                </div>
+                <!-- Add design skills section similarly -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-nutaku-dark/80 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold bg-gradient-to-r from-nutaku-red to-nutaku-purple bg-clip-text text-transparent">
+                        Kyle
+                    </a>
+                    <p class="text-gray-400 mt-2">Creating immersive experiences</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-xl hover:text-nutaku-red transition-colors"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="text-xl hover:text-nutaku-red transition-colors"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
